@@ -4,43 +4,61 @@
     <meta charset="utf-8">
     <title>Concrete Manifesto</title> 
     <!--
-        This is my (Zach Whalen) interpretaton of 
+        This is my (John Mabry) interpretaton of 
         the Concrete Manifesto exercise:
         https://canvas.umw.edu/courses/1498218/assignments/11723270
 
-        My manifesto statement is by Werner Herzog:
-        "Fact creates norms, and truth illumination."
-        https://designmanifestos.org/werner-herzog-the-minnesota-declaration/
+        My manifesto statement is by Bruce Mau:
+        "Practically everything we do today needs to change."
+        https://designmanifestos.org/bruce-mau-massive-change-24-mc24/
         
-        
-        This is an attempt with a more Futurist design.
 
     -->  
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
 
     <style type="text/css">
+        .flipvertical {
+            display: inline-block;
+            transform: scaleY(-1);
+        }
+        div {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h3 {
+            padding: 10px;
+        }
+
        
         div {
 /*            position: absolute;*/
             top: -500px;
             left: 500px;
-            rotate: -30deg;
-            border-left: 10px solid gray;
+            rotate: 30deg;
+            border-left: 30px double black;
+            border-right: 30px double black;
+            border-top: 30px double black;
+            border-bottom: 30px double black;
             padding: 18px;
-            padding-top:600px;
-            height: 2000px;
-            position:fixed;
+            padding-top:500px;
+            height: 3500px;
+            position: absolute;
+
         }
         p {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size:60px;
+            font-family: 'Fugaz One', sans-serif;
+            font-size:88px;
             margin-top: 0;
             margin-bottom:0;
-            line-height: 100%;
-            letter-spacing:15px;
+            line-height: 75%;
+            letter-spacing:10px;
+            margin: 15px;
+            width: 720px;
         }
     
         #grow:hover {
@@ -51,13 +69,17 @@
 <body>
 
     <div>
-        <p>FACT</p>
-        <p>CREATES</p>
-        <p id="grow">NORMS</p> 
-        <p>AND</p> 
-        <p>TRUTH</p> 
-        <p>ILLUMINATION</p>
+        <p style="color: green;">PRACTICALLY</p>
+        <p style="color: green;">EVERYTHING</p>
+        <p style="color: green;">WE</p> 
+        <p style="color: green;">DO</p> 
+        <p id="grow">TODAY</p> 
+        <p style="color: green;">NEEDS</p>
+        <p style="color: green;">TO</p>
+        <p style="color: green;">CHANGE</p>
     </div>
+
+
 
   
 
@@ -65,7 +87,7 @@
 let g = document.getElementById("grow");
 
 // set the font-size property in JavaScript
-g.style.fontSize = "60px";
+g.style.fontSize = "130px";
 
 // add a function to the onclick event
 g.onclick = function(){
