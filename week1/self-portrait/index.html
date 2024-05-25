@@ -9,9 +9,41 @@
     <!--
         Use this page to complete the "Data Self Portrait" project:
         https://canvas.umw.edu/courses/1498218/assignments/11723291
+
+        For this project I was to add an image, a design, and a quantitative
+        representation of myself to a webpage. The picture I added is of an
+        "Among Us" character. For a simple design I added a gradient background
+        that changes every 5 seconds. 
     -->  
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+
     <style type="text/css">
+
+        body {
+
+            background: linear-gradient( -45deg, #719F1E, #4A7212, #D5CE58, #104210);
+            background-size: 400% 400%;
+            animation: change 5s ease infinite;
+
+        }
+
+        @keyframes change {
+
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
 
 
@@ -19,6 +51,31 @@
 
 </head>
 <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="header">
+                <p style="color: black; position: relative;
+                right: -200pt; font-family: 'rubik glitch pop', system-ui;
+                font-size: 300px; text-decoration-line: line-through;">Self-Portrait</p>
+                <p></p>
+            </div>    
+        </div>        
+    </div>
+
+    <div>
+
+        <img src="kjv-2.png" width="1920" height="1080" />
+
+    </div>
+
+    <img src="webmapper.png" width="1885" height="874" 
+     style="border: solid black;" 
+
+    />
+
+
+
 
 
 </body>
