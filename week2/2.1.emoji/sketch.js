@@ -46,7 +46,5 @@ function draw() {
   ellipse(195, 130, 175, 175);
 
 
- 
-
 
 }
