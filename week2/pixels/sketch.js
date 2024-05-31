@@ -29,8 +29,10 @@ function draw() {
       var g = img.pixels[index + 1];
       var b = img.pixels[index + 2];
 
+      fill(random(0,20),random(0,20),b);
       //fill(r,g,b);
       ellipse(x,y,sampleX,sampleY);
+
     }
   }
 
