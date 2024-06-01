@@ -32,7 +32,7 @@ function draw() {
       var b = img.pixels[index + 2];
 
       //Color of the ellipses
-      fill(random(20,40),random(0,50),b);
+      //fill(random(20,40),random(0,50),b);
 
       //fill(r,g,b);
 
