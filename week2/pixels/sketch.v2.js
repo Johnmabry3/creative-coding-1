@@ -42,6 +42,3 @@ function draw() {
 
     }
   }
-
-
-}
