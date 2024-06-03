@@ -25,7 +25,7 @@ function draw() {
   triangle(x,y,70,x,y,50);
 
   // initial position of line
-  translate(width / 5, height / 5);
+  translate(width / 6, height / 6);
 
   // drawing the line
   line(x,y,80,70);
