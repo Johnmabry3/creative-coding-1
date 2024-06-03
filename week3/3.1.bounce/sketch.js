@@ -6,28 +6,50 @@ let yspeed = 4;
 
 function setup() {
   createCanvas(400, 300);
-  fill("green");
+  fill("white");
+  background('black');
 }
 
 function draw() {
-  background(220);
-  
 
+  // initial position of rectangle 
   translate(width / 2, height / 2);
 
-  rect(x,y,55);
+  // drawing the rectangle
+  rect(x,y,60);
+
+  // initial position of triangle
+  translate(width / 12, height / 12);
+
+  // drawing the triangle
+  triangle(x,y,70,x,y,50);
+
+  // initial position of line
+  translate(width / 5, height / 5);
+
+  // drawing the line
+  line(x,y,80,70);
 
 
+  // where the rectangle moves on the x-axis
   if (x > 145 | x < -200){
     xspeed = - xspeed;
-    fill(random(255),random(255),random(255));
+
+    // change of background colors when the rectangle hits the left and right of canvas
+    background(random(255),random(255),random(255));
+ 
   }
 
+  // where the rectangle moves on the y-axis
   if (y > 95 | y < -150){
     yspeed = - yspeed;
-    fill(random(255),random(255),random(255));
+
+    // change of background colors when the rectangle hits the top and bottom of canvas
+    background(random(255),random(255),random(255));
+
   }
 
+  // continuous speed of rectangle across x and y axis
   x += xspeed;
   y += yspeed;
   
