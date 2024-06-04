@@ -17,10 +17,10 @@ function setup() {
 function draw() {
   background(220);
 
-  //No border around the ellipses
+  // no border around the ellipses
   noStroke();
 
-  //Image placement
+  // image placement
   translate(0,0);
   image(img,0,0,600,745);
 
@@ -31,12 +31,12 @@ function draw() {
       var g = img.pixels[index + 1];
       var b = img.pixels[index + 2];
 
-      //Color of the ellipses
-      //fill(random(20,40),random(0,50),b);
+      // color of the ellipses
+      // fill(random(20,40),random(0,50),b);
 
-      //fill(r,g,b);
+      // fill(r,g,b);
 
-      //Drawing the ellipses
+      // drawing the ellipses
       ellipse(x,y,sampleX,sampleY);
 
 
