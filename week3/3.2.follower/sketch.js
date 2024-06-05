@@ -69,7 +69,7 @@ function draw() {
   }
 
   // check for collision with chaser
-  if (d < 25){
+  if (d < 20){
     score -= 1
     x = random(width);
     y = random(height);  
