@@ -9,11 +9,33 @@
     <!--
         Use this page to complete the "Ripples" exercise:
         https://canvas.umw.edu/courses/1446087/assignments/10969981
+
+        Here is my version of the Ripple exercise.
+        The changes that I made were to the background color, canvas color,
+        and the speed of the ripples. I wanted to resemble a beach, so I made
+        the background to animate a couple brown and blue colors.
     -->  
 
     <style type="text/css">
         body {
-            background-color:#f6e4ad;
+            background: linear-gradient(95deg, #183a53,#5c97b8, #53c7f0, #d1a58a, #f6e4ad);
+            background-size: 800%, 800%;
+            animation: change 5s ease infinite;
+        }
+
+        @keyframes change {
+
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
         main {
             width: 100%;
@@ -27,7 +49,7 @@
 </head>
 <body>
     <main>
-    </main>
+    </main> 
     <script src="sketch.js"></script>
 </body>
 </html> 
