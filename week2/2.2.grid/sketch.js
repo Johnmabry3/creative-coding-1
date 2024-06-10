@@ -14,8 +14,8 @@ function draw() {
     for (let y = 0; y < 8; y +=1){
       push();
 
-      // move the drawing plan to
-      // add a new circle
+      // move the drawing plane
+      // add a new shape
       translate(x * 160, y * 160);
 
       // line thickness
