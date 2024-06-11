@@ -1,0 +1,85 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<!--
+
+Lede by John Mabry III, June 2024,
+
+based on Nick Montfort's 2012 Lede
+https://nickm.com/poems/lede.html
+
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+-->
+<style type="text/css">
+/* <![CDATA[ */
+body {
+ background: #fff;
+ color: #000;
+ margin: 0 0 0 24pt;
+ font-family: Optima, sans-serif;
+ font-size: 13pt;
+}
+a {
+ color: #117;
+ text-decoration: none;
+}
+/* ]]> */
+</style>
+<script type="text/javascript">
+var t = 0;
+var absurd_situation = ["flunking a job interview", "stepping into a pile of poop", "tripping over shoelaces", "bumping into a mannequin", "losing cell-phone connection", "skipping class", "pumping gas into the car", "watering the garden", "receiving a parking ticket", "typing on a computer", "reading a monologue"];
+var sad_descriptor = ["an uncharasmatic", "a boring", "a lackidasical", "a deeby downer", "an unworthy", "an uneducated", "a clouded", "a smelly", "a simp", "a complete buffoon", "a pushover"];
+var nationality = ["Irish", "Spanish", "Croatian", "American", "Iranian", "Chinese", "Japanese", "Australian", "Columbian", "Brazilian", "Arabian", "German"];
+var man_or_woman = ["boy", "girl", "adolescent", "golden ager"];
+var silly_character = ["a snake", "a bunny rabbit", "a hunter", "a bedhead", "a warrior", "Darth Vader", "Norman Bates", "Big Ben", "Jack Sparrow", "a mask","Thanos"];
+var interact_with = ["pay respects to", "investigate", "stare at", "smile at", "jump for joy for", "bombard", "call", "fist bump", "pray with", "go fishing with", "comfort", "scold", "intimidate"];
+function rand_range(max) {
+    "use strict";
+    return Math.floor(Math.random() * (max + 1));
+}
+function fresh(array) {
+    "use strict";
+    var index = rand_range(array.length - 2) + 1, selection = array[index];
+    array[index] = array[0];
+    array[0] = selection;
+    return selection;
+}
+function story() {
+    "use strict";
+    var last, lede, main = document.getElementById('main');
+    if (t <= 12) {
+        t += 1;
+    } else {
+        main.removeChild(document.getElementById('main').firstChild);
+    }
+    last = document.createElement('div');
+    last.appendChild(document.createElement('br'));
+    lede = "While " + fresh(absurd_situation) + ", " + fresh(sad_descriptor) + " " + fresh(nationality) + " " + fresh(man_or_woman) + " had an idea: Why not dress as " + fresh(silly_character) + " and " + fresh(interact_with) + " people?";
+    last.appendChild(document.createTextNode(lede));
+    main.appendChild(last);
+}
+function produce_stories() {
+    "use strict";
+    story();
+    setInterval(story, 3500);
+}</script>
+  <title>Lede</title>
+</head>
+<body onload="produce_stories();">
+<div style="float:right; background:#999; margin-left:6px; border-left:thin #000 solid; border-bottom:thin #000 solid; padding:6px">
+<div><br>Lede<br />by John Mabry III, 2024<br />
+    based on Lede by Nick Montfort<br /></div>
+<div><br>Lede<br />Based on a <a href="http://www.newser.com/story/157857/scotlands-new-hero-is-man-in-giraffe-suit.html">True Story</a><br /><a href="http://nickm.com">Nick Montfort</a></div>
+
+</div>
+<div id="main"></div>
+</body>
+</html>

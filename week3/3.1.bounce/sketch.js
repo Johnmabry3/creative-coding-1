@@ -31,7 +31,7 @@ function draw() {
   line(x,y,80,70);
 
 
-  // where the rectangle moves on the x-axis
+  // where the shapes move on the x-axis
   if (x > 145 | x < -200){
     xspeed = - xspeed;
 
