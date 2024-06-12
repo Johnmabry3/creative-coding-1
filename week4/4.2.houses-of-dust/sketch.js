@@ -8,8 +8,6 @@ let grammar = tracery.createGrammar({
 
 });
 
-//let poem = grammar.flatten('#origin#');
-
 function setup() {
   createCanvas(800, 800);
   frameRate(0.15);
@@ -20,5 +18,7 @@ function draw() {
   poem = grammar.flatten("#origin#");
   textFont("courier new");
   textSize(32);
+  strokeWeight(1);
+  stroke(1);
   text(poem,50,150);
 }
