@@ -33,8 +33,6 @@ function setup(){
 
 	// add a complimentary closing
 	letter.child( createP("Yours Truly, <br>Johnny"));
-
-
 }
 
 function mousePressed(){
