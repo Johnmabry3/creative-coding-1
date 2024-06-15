@@ -6,11 +6,74 @@
 	<title>This is my Book</title>
 
 	<script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
-	
+
+	<link type="text/css" rel="stylesheet" href="https://johnmabry3.github.io/creative-coding-1/week4/book/interface.css" />
+
+<style>
+	/* CSS web design example codes from paged.js 
+	https://pagedjs.org/documentation/5-web-design-for-print/ */
+
+	@page {
+		size: A4;
+	}
+
+	@page:left {
+  		margin-left: 25mm;
+  		margin-right: 15mm;
+  		@bottom-left {
+  			content: counter(page);
+  		}
+
+  		@bottom-center {
+  			content: "Nosce Te Ipsum";
+  		}
+	}
+
+	@page:right {
+  		margin-left: 15mm;
+  		margin-right: 25mm;
+  		@bottom-center {
+  			content: "John Mabry III";
+  		}
+  		@bottom-right {
+  			content: counter(page);
+  		}
+	}
+
+	@page:first {
+		@bottom-right {
+			content: '';
+		}
+		@bottom-center {
+			content: '';
+		}
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	h1 {
+		margin-top: 10mm;
+		text-align: center;
+		font-size: 30mm;
+	}
+
+	subtitle {
+		text-align: center;
+		font-size: 5mm;
+		display: block;	
+	}
+
+
+
+</style>
+
 </head>
 <body>
 
 	<h1>Nosce Te Ipsum</h1>
+	<subtitle>By John Mabry III</subtitle>
 
 	<h2>Chapter I</h2>
 
