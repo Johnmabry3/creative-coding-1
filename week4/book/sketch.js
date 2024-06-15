@@ -46,7 +46,7 @@ function setup() {
   do {
     
     // create chapter titles from single sentences.
-    content.child( createElement("h2","Act " + c + ": " + mv.generate(2)));
+    content.child( createElement("h2","Act " + c + ": " + mv.generate(3)));
     let newText = "";
     // use random() to specify the minimum and maximum
     // paragraphs per chapter
