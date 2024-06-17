@@ -40,6 +40,9 @@ function draw() {
       // drawing the ellipses
       ellipse(x,y,sampleX,sampleY);
 
+      // drawing another set of ellipses that are flipped
+      ellipse(y,x,sampleY,sampleX);
+
 
     }
   }
