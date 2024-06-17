@@ -24,6 +24,7 @@ function draw() {
   translate(0,0);
   image(img,0,0,600,745);
 
+
   for (let x = 0; x <= img.width; x += sampleX){
     for (let y = 0; y <= img.height; y += sampleY){
       var index = (x + y * img.width) * 2
@@ -42,3 +43,5 @@ function draw() {
 
     }
   }
+
+}
