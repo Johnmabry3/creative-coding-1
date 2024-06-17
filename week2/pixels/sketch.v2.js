@@ -1,6 +1,6 @@
 
 let img;
-let sampleX = 20;
+let sampleX = 30;
 let sampleY = 10;
 
 function preload(){
