@@ -30,7 +30,7 @@ function draw() {
   image(bg, 0,0,width,height);
 
   // transparency of the line drawing
-  strokeWeight(3);
+  strokeWeight(2);
 
   // lines drawn on canvas
   for(let x = 0; x < width; x ++) {
