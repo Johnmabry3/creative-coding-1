@@ -66,8 +66,6 @@ function createBG() {
       // coloring the strokes and points of bands
       bg.stroke(colors[color]);
       bg.point(i,j);
-      
-
 
     }
   }

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Portfolio: John Mabry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>JOHN<br>MABRY III</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">JOHN MABRY III</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="Custom Pixels.png" style="width:100%" onclick="onClick(this)" alt="Pixel Me 
+
+  	  </br>
+  	  </br>
+
+      This is a custom pixels drawing of myself. If you click the link, you will see a animated version of the pixels"> 
+      <a href="https://johnmabry3.github.io/creative-coding-1/week2/pixels/index.html" style="color:red; font-weight: bold;">Pixel Me</a>
+    <br />
+      <img src="iyrtitl.png" style="width:100%" onclick="onClick(this)" alt="If You're Reading This It's Too Late
+
+      </br>
+      </br>
+      From Drake's highly unexpected album drop in 2014, I created a ransom letter based off of the albums acronym">
+    </br>  
+    <a href="https://johnmabry3.github.io/creative-coding-1/week1/1.2.ransom-letter/ransom-letter_iyrtitl.html" style="color:red; font-weight: bold;">IYRTITL</a>
+
+    </div>
+
+    <div class="w3-third">
+      <img src="popsicle.png" style="width:100%" onclick="onClick(this)" alt="Water Malone
+
+      </br>
+      </br>
+      Never seeing a popsicle emoji on iOS or android operating systems, I decided to come up with my own sketch. Today's flavor, watermelon">
+      </br>
+      <a href="https://johnmabry3.github.io/creative-coding-1/week2/2.1.emoji/index.v2.html" style="color:red; font-weight: bold;">Water Malone Popsicle</a>
+      <img src="tomato.kill.png" style="width:100%" onclick="onClick(this)" alt="tomato.kill
+
+      </br>
+      </br>
+      This is an experimental video of a clip from my podcast. The founders of Ampped Up Studios sat down to catch up on life, and this is a portion of that discussion">
+  	  </br>
+  	  <a href="https://www.youtube.com/watch?v=DfIkyNmj9tY" style="color:red; font-weight: bold;">tomato.kill</a>
+      
+    </div>
+    
+    <div class="w3-third">
+      <img src="pixel sorting.jpg" style="width:100%" onclick="onClick(this)" alt="ICU
+      </br>
+      </br>
+      From a self portrait to a digital piece. I changed the pixels organization based on saturation and completely altered the image. The only visible features on my face you can define are my nostrils, beard, and my eyes">
+  	  </br>
+  	  <a href="https://johnmabry3.github.io/creative-coding-1/week2/2.x.pixel-sort/index.html" style="color:red; font-weight: bold;">ICU</a>
+  	</br>
+      <img src="manifesto.png" style="width:100%" onclick="onClick(this)" alt="Change
+
+      </br>
+      </br>
+      In this piece, I rearranged and manipulated the phrase from Bruce Mau's ('Practically everything we do today needs to change'). You can scroll to see the entire page, and the today in the middle of the page can change when clicked on">
+  	  </br>
+  	  <a href="https://johnmabry3.github.io/creative-coding-1/week1/1.3.concrete-manifesto/example/index.v2.html" style="color:red; font-weight: bold;">Change</a>
+      
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <!--<div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>-->
+  
+  <!-- Model for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="img_3460.png" alt="Me" class="camera holding" width="550" height="650">
+    <div class="w3-content w3-justify" style="max-width:550px">
+      <h4>John Mabry III</h4>
+      <p>I love capturing priceless moments in people's lives. I am able to help tell a person's story in ways their words could not. I use my skills and abilities to put emotion, depth, light, ideas, and communication into all films. Most of all, I enjoy being able to create and impact lives!
+
+      </div>	
+
+      <br />	
+      Co-Founder of Ampped Up Studios
+      Lead Videographer for Ampped Up Studios
+      </p>
+      <p>mail: info@amppedupstudios.com</p>
+      <p>tel: 571-406-3236</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">Videography</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:65%">65%</div>
+      </div>
+      <p class="w3-wide">Davinci Resolve/Premiere Pro</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+      <hr class="w3-opacity">
+
+      <h4 class="w3-padding-16">How much I charge</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Videography</li>
+            <li class="w3-padding-16">Editing</li>
+            <li class="w3-padding-16">Mail Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 150</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Videography</li>
+            <li class="w3-padding-16">Editing</li>
+            <li class="w3-padding-16">Endless Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 300</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Are you in need of a videographer? Fill out the form and fill me in with the details. I love working with new people!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>INFO</h3>
+        <p>Co-Founder of Ampped Up Studios. Please feel free to contact me at anytime.</p>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="SELF-portrait.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Portrait</span><br>
+            <span>Self-Portrait painting</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="img_3459.png" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Hotel Edison</span><br>
+            <span>Shooting a promo ad for Hotel Edison</span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Art</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Washington, D.C.</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Video Art</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Oil Painting</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Contemporary</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Portrait</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Digital</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Photography</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Videography</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Editing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
